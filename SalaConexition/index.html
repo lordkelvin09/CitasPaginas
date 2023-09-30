@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PeerChat</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.1/css/all.css" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="./main.css">
+    <link rel="stylesheet" href="./formulario/style.css">
+</head>
+<body>
+    
+        <header id="nav">
+            <div class="nav--list">
+                 <a href="lobby.html"/>
+                     <h3 id="logo">
+                         <img src="./imagenes/images/3.png" alt="Site Logo">
+                         <span>YESIDDEV</span>
+                     </h3>
+                 </a>
+            </div>
+     
+             <div id="nav__links">
+                 <button id="chat__button"><svg width="24" height="24" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" fill="#ede0e0" clip-rule="evenodd"><path d="M24 20h-3v4l-5.333-4h-7.667v-4h2v2h6.333l2.667 2v-2h3v-8.001h-2v-2h4v12.001zm-15.667-6l-5.333 4v-4h-3v-14.001l18 .001v14h-9.667zm-6.333-2h3v2l2.667-2h8.333v-10l-14-.001v10.001z"/></svg></button>
+                 
+                 <a class="nav__link" id="create__room__btn" href="lobby.html">
+                     Create Room
+                    <!-- <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="#ede0e0" viewBox="0 0 24 24"><path d="M12 0c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm6 13h-5v5h-2v-5h-5v-2h5v-5h2v5h5v2z"/></svg> -->
+                 </a>
+             </div>
+         </header>
+        <div id="camera-container">
+            <div id="videos">
+                <video class="video-player" id="user-1" autoplay playsinline></video>
+                <video class="video-player" id="user-2" autoplay playsinline></video>
+            </div>
+        </div>
+    
+        <div id="controls">
+    
+            <div class="control-container" id="camera-btn">
+                <img src="/imagenes/camera-360.png" />
+            </div>
+    
+            <div class="control-container" id="mic-btn">
+                <img src="/imagenes/forma-de-microfono-negro.png" />
+            </div>
+            
+            <a href="lobby.html">
+            <div class="control-container" id="leave-btn">
+                <img src="/imagenes/ring-phone.png" />
+            </div>
+            </a>
+            <div class="control-container" id="formul__ario">
+                <p>Form</p>
+            </div>
+        </div>
+    
+    
+        <section id="messages__container" class="displey">
+
+            <div id="messages">
+                <!-- <div class="message__wrapper">
+                    <div class="message__body__bot">
+                        <strong class="message__author__bot">🤖 Medico</strong>
+                        <p class="message__text__bot">Welcome to the room, say hello!</p>
+                    </div>
+                </div> -->   
+            </div>   
+            <form id="message__form">
+                    <input type="text" name="message" placeholder="Send a message...." />
+            </form>
+        </section>
+           
+        <main id="furmu">
+                <!-- Formulario -->
+                <form action="historial.php" class="form" id="form" method="post">
+                    <!-- Grupo de usurario -->
+                    <div class="form__grupo" id="grupo__usuario">
+                        <label class="form__label">Nombre y Apellido del Paciente
+                        </label>
+                        <div class="form__grupo-input">
+                            <input class="form__input" type="text" 
+                            name="usuario" id="usuario" placeholder="Benito aragon">
+                            <i class="form__validacion-estado fa fa-times-circle">
+                            </i>
+                        </div>
+                        <p class="form__input-error">El usuario debe 
+                            tener 4 caracteres y solo numeros, letras 
+                            y guiones bajos
+                        </p>
+                    </div>
+        
+                    <!-- Grupo Nombre -->
+                    <div class="form__grupo" id="grupo__nombre">
+                        <label class="form__label">Nombre y Apellido 
+                            del Acompañante
+                        </label>
+                        <div class="form__grupo-input">
+                            <input class="form__input" type="text" 
+                            name="nombre" id="nombre" 
+                            placeholder="Javier ibarra">
+                            <i class="form__validacion-estado fa fa-times-circle">
+                            </i>
+                        </div>
+                        <p class="form__input-error">El usuario debe 
+                            tener 4 caracteres y solo numeros, letras 
+                            y guiones bajos
+                        </p>
+                    </div>
+                    <!-- Grupo Email -->
+                    <div class="form__grupo" id="grupo__correo">
+                        <label class="form__label">Correo Electronico
+                        </label>
+                        <div class="form__grupo-input">
+                            <input class="form__input" type="email" 
+                            name="correo" id="correo" 
+                            placeholder="correo@javier.com">
+                            <i class="form__validacion-estado fa fa-times-circle">
+                            </i>
+                        </div>
+                        <p class="form__input-error">El correo debe 
+                            tener minimo 4 caracteres y solo se 
+                            admiten numeros, letras y guion bajo.
+                        </p>
+                    </div>
+        
+                    <!-- Grupo direccion -->
+        
+                    <div class="form__grupo" id="grupo__direction">
+                        <label class="form__label">Direccion
+                        </label>
+                        <div class="form__grupo-input">
+                            <input class="form__input" type="text" 
+                            name="direction" id="direction" placeholder="CLL32#44">
+                            <i class="form__validacion-estado fa fa-times-circle">
+                            </i>
+                        </div>
+                        <p class="form__input-error">El usuario debe 
+                            tener 4 caracteres y solo numeros, letras 
+                            y guiones bajos.
+                        </p>
+                    </div>
+                    <div class="form__grupo" id="grupo__ciudad">
+                        <label class="form__label">Ciudad
+                        </label>
+                        <div class="form__grupo-input">
+                            <input class="form__input" type="text" 
+                            name="ciudad" id="ciudad" placeholder="Ciudad: Medellin">
+                            <i class="form__validacion-estado fa fa-times-circle">
+                            </i>
+                        </div>
+                        <p class="form__input-error">El usuario debe tener solo numeros, letras 
+                            y guiones bajos.
+                        </p>
+                    </div>
+                    <div class="form__grupo" id="grupo__estado">
+                        <label class="form__label">Estado
+                        </label>
+                        <div class="form__grupo-input">
+                            <input class="form__input" type="text" 
+                            name="estado" id="estado" placeholder="Dep: Antioquia">
+                            <i class="form__validacion-estado fa fa-times-circle" >
+                            </i>
+                        </div>
+                        <p class="form__input-error">El usuario debe 
+                            tener 4 caracteres y solo numeros, letras 
+                            y guiones bajos.
+                        </p>
+                    </div>
+        
+                    <!-- Grupo telefono -->
+        
+                    <div class="form__grupo" id="grupo__telefono">
+                        <label class="form__label">Numero de telefono
+                        </label>
+                        <div class="form__grupo-input">
+                            <input class="form__input" type="number" 
+                            name="telefono" id="telefono" 
+                            placeholder="3205406080">
+                            <i class="form__validacion-estado fa fa-times-circle">
+                            </i>
+                        </div>
+                        <p class="form__input-error">El numero de 
+                            telefono debe tener solo 10 digitos.
+                        </p>
+                    </div>
+
+                    <!-- Fecha de nacimiento -->
+                    <div class="form__grupo" id="grupo__nacimiento">
+                        <label class="form__label">Fecha de Nacimiento
+                        </label>
+                        <div class="form__grupo-input">
+                            <input class="form__input" type="date" 
+                            name="nacimiento" id="nacimiento">
+                            <i class="form__validacion-estado fa fa-times-circle">
+                            </i>
+                        </div>
+                        <p class="form__input-error">El usuario debe solo numeros
+                        </p>
+                    </div>
+
+                    <!-- Motivo de consulta -->
+                    <div class="form__grupo" id="grupo__consulta">
+                        <label class="form__label">Motivo de Consulta
+                        </label>
+                        <div class="form__grupo-input">
+                            <!-- <input class="form__input" type="text" 
+                            name="consulta" id="consulta"> -->
+                            <textarea class="form__input" id="consulta" name="consulta" rows="6" cols="60"></textarea>
+                            <i class="form__validacion-estado fa fa-times-circle">
+                            </i>
+                        </div>
+                        <p class="form__input-error">El usuario debe tener solo texto
+                        </p>
+                    </div>
+
+                    <!-- Diagnostico -->
+                    <div class="form__grupo" id="grupo__diagnostico">
+                        <label class="form__label">Diagnostico
+                        </label>
+                        <div class="form__grupo-input">
+                            <textarea class="form__input"id="diagnostico" name="diagnostico" rows="6" cols="60"></textarea>
+                            <i class="form__validacion-estado fa fa-times-circle">
+                            </i>
+                        </div>
+                        <p class="form__input-error">El usuario debe tener solo texto
+                        </p>
+                    </div>
+
+                    <!-- Examenes Complementarios -->
+                    <div class="form__grupo" id="grupo__examenes">
+                        <label class="form__label">Examenes Complementario
+                        </label>
+                        <div class="form__grupo-input">
+                            <textarea class="form__input"id="examenes" name="examenes" rows="6" cols="60"></textarea>
+                            <i class="form__validacion-estado fa fa-times-circle">
+                            </i>
+                        </div>
+                        <p class="form__input-error">El usuario debe tener solo texto
+                        </p>
+                    </div>
+        
+                    <!-- Grupo terminos y condiciones -->
+                    <div class="form__grupo form__grupo-terminos" 
+                    id="grupo__terminos">
+                        <label class="form__label">
+                            <input class="form__checkbox" 
+                            type="checkbox" name="terminos" 
+                            id="terminos">
+                            <b class="form__span">Acepto los terminos 
+                                y condiciones.
+                            </b>
+                        </label>
+                    </div>
+        
+                    <!-- Mensaje de campos requeridos -->
+                    <div class="form__mensaje" id="form__mensaje"> 
+                        <p><i class="fa fa-exclamation-circle"><b>Error:</b> Debes completar todos los campos.</i> 
+                        </p>
+                    </div>
+        
+                    <!-- Grupo enviar -->
+                    <div class="form__grupo form__grupo-btn-enviar">
+                        <p class="form__mensaje-exito" id="form__mensaje-exito">
+                            El formulario se envio correctamente.
+                        </p>
+                        <input class="form__btn" type="submit" value="Enviar" name="registrer">
+                    </div>
+                </form>
+        </main>
+        
+</body>
+    <script src="agora-rtm-sdk-1.5.1.js"></script>
+    <script src="script.js"></script>
+    <script src="room.js"></script>
+    <script src="lobby.js"></script>
+    <script src="form.js"></script>
+    <script src="./formulario/formulario.js"></script>
+</html>

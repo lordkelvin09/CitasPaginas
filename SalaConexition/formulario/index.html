@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, 
+    initial-scale=1.0">
+    <link rel="shortcut icon" href="./img/formulario-de-contacto.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.1/css/all.css" crossorigin="anonymous">
+    <title>Formulario</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <main>
+        <!-- Formulario -->
+        <form action="#" class="form" id="form">
+            <!-- Grupo de usurario -->
+            <div class="form__grupo" id="grupo__usuario">
+                <label class="form__label">Nombre y Apellido del Paciente
+                </label>
+                <div class="form__grupo-input">
+                    <input class="form__input" type="text" 
+                    name="usuario" id="usuario" placeholder="Benito aragon">
+                    <i class="form__validacion-estado fa fa-times-circle">
+                    </i>
+                </div>
+                <p class="form__input-error">El usuario debe 
+                    tener 4 caracteres y solo numeros, letras 
+                    y guiones bajos
+                </p>
+            </div>
+
+            <!-- Grupo Nombre -->
+            <div class="form__grupo" id="grupo__nombre">
+                <label class="form__label">Nombre y Apellido 
+                    del Acompañante
+                </label>
+                <div class="form__grupo-input">
+                    <input class="form__input" type="text" 
+                    name="nombre" id="nombre" 
+                    placeholder="Javier ibarra">
+                    <i class="form__validacion-estado fa fa-times-circle">
+                    </i>
+                </div>
+                <p class="form__input-error">El usuario debe 
+                    tener 4 caracteres y solo numeros, letras 
+                    y guiones bajos
+                </p>
+            </div>
+            <!-- Grupo Email -->
+            <div class="form__grupo" id="grupo__correo">
+                <label class="form__label">Correo Electronico
+                    usuario
+                </label>
+                <div class="form__grupo-input">
+                    <input class="form__input" type="email" 
+                    name="correo" id="correo" 
+                    placeholder="correo@javier.com">
+                    <i class="form__validacion-estado fa fa-times-circle">
+                    </i>
+                </div>
+                <p class="form__input-error">El correo debe 
+                    tener minimo 4 caracteres y solo se 
+                    admiten numeros, letras y guion bajo.
+                </p>
+            </div>
+
+            <!-- Grupo direccion -->
+
+            <div class="form__grupo" id="grupo__direction">
+                <label class="form__label">Direccion
+                </label>
+                <div class="form__grupo-input">
+                    <input class="form__input" type="text" 
+                    name="direction" id="direction" placeholder="CLL32#44">
+                    <i class="form__validacion-estado fa fa-times-circle">
+                    </i>
+                </div>
+                <p class="form__input-error">El usuario debe 
+                    tener 4 caracteres y solo numeros, letras 
+                    y guiones bajos.
+                </p>
+            </div>
+            <div class="form__grupo" id="grupo__ciudad">
+                <label class="form__label">Ciudad
+                </label>
+                <div class="form__grupo-input">
+                    <input class="form__input" type="text" 
+                    name="ciudad" id="ciudad" placeholder="Ciudad: Medellin">
+                    <i class="form__validacion-estado fa fa-times-circle">
+                    </i>
+                </div>
+                <p class="form__input-error">El usuario debe 
+                    tener 4 caracteres y solo numeros, letras 
+                    y guiones bajos.
+                </p>
+            </div>
+            <div class="form__grupo" id="grupo__estado">
+                <label class="form__label">Estado
+                </label>
+                <div class="form__grupo-input">
+                    <input class="form__input" type="text" 
+                    name="estado" id="estado" placeholder="Dep: Antioquia">
+                    <i class="form__validacion-estado fa fa-times-circle" >
+                    </i>
+                </div>
+                <p class="form__input-error">El usuario debe 
+                    tener 4 caracteres y solo numeros, letras 
+                    y guiones bajos.
+                </p>
+            </div>
+
+            <!-- Grupo telefono -->
+
+            <div class="form__grupo" id="grupo__telefono">
+                <label class="form__label">Numero de telefono
+                </label>
+                <div class="form__grupo-input">
+                    <input class="form__input" type="number" 
+                    name="telefono" id="telefono" 
+                    placeholder="3205406080">
+                    <i class="form__validacion-estado fa fa-times-circle">
+                    </i>
+                </div>
+                <p class="form__input-error">El numero de 
+                    telefono debe tener solo 10 digitos.
+                </p>
+            </div>
+
+            <!-- Grupo terminos y condiciones -->
+            <div class="form__grupo form__grupo-terminos" 
+            id="grupo__terminos">
+                <label class="form__label">
+                    <input class="form__checkbox" 
+                    type="checkbox" name="terminos" 
+                    id="terminos">
+                    <b class="form__span">Acepto los terminos 
+                        y condiciones.
+                    </b>
+                </label>
+            </div>
+
+            <!-- Mensaje de campos requeridos -->
+            <div class="form__mensaje" id="form__mensaje"> 
+                <p><i class="fa fa-exclamation-circle"><b>Error:</b> Debes completar todos los campos.</i> 
+                </p>
+            </div>
+
+            <!-- Grupo enviar -->
+            <div class="form__grupo form__grupo-btn-enviar">
+                <p class="form__mensaje-exito" id="form__mensaje-exito">
+                    El formulario se envio correctamente.
+                </p>
+                <input class="form__btn" type="submit" value="Enviar">
+            </div>
+        </form>
+    </main>
+    <script src="./formulario.js"></script>
+</body>
+</html>

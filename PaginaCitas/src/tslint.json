@@ -1,0 +1,13 @@
+{
+    "defaultSeverity": "error",
+    "extends": ["tslint:latest", "tslint-config-prettier"],
+    "jsRules": {},
+    "rules": {
+        "no-console": 0,
+        "member-access":0,
+        "object-literal-sort-keys": 0,
+        "ordered-imports": 0,
+        "interface-name": 0
+    },
+    "rulesDirectory": []
+}
