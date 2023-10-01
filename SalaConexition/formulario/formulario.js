@@ -1,6 +1,7 @@
 document.addEventListener('DOMContentLoaded', function() {
     const $formulario = document.getElementById('form');
     const $inputs = document.querySelectorAll('#form input');
+    const $textarea = document.querySelectorAll('.form__grupo-input textarea');
 
     const expresiones = {
         usuario: /^[a-zA-ZÀ-ÿ\s]{1,40}$/,
@@ -92,6 +93,11 @@ document.addEventListener('DOMContentLoaded', function() {
         input.addEventListener("keyup", validarFormulario);
         input.addEventListener("blur", validarFormulario);
     });
+    $textarea.forEach((textarea) => {
+        textarea.addEventListener("keyup", validarFormulario);
+        textarea.addEventListener("blur", validarFormulario);
+    });
+
 
     $formulario.addEventListener("submit", (e) => {
         e.preventDefault();

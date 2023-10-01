@@ -1,7 +1,7 @@
 export const data = [
     {
         question: 'Cual de las siguientes opciones no es un editor de codigo',
-        choices: ['vim', 'vscode', 'word'],
+        choices: ['vim', 'vscode', 'word', 'emacs', 'jetbrains'],
         answer: 'word'
     },
     {
@@ -12,6 +12,6 @@ export const data = [
     {
         question: 'Que lenguaje nos sirve para estilizar sitios web',
         choices: ['stylus', 'less', 'sass', 'postCSS', 'NextCSS'],
-        answer: 'postCSS'
+        answer: 'NextCSS'
     }
 ];

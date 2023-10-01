@@ -5,11 +5,12 @@ html, body{
 }
 
 body {
-    background: #272343;
+    background: gray;
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
+    overflow: hidden;
 }
 
 #quiz {
@@ -17,6 +18,7 @@ body {
     width: 30rem;
     padding: 4rem;
     text-align: center;
+    max-height: 110vh;
 }
 
 h1{
@@ -24,9 +26,11 @@ h1{
     font-size: 3rem;
     text-align: center;
     padding: 2px 0;
+    border-radius: 50px;
 }
 
 #question {
+    font-family: sans-serif;
     font-size: 1.7rem;
     color: #5a6772;
 }
@@ -39,7 +43,6 @@ h1{
     border-radius: 0.3rem;
     padding: 10px 20px;
     margin: 10px 40px 10px;
-    outline: 0;
 }
 
 .button:hover {
