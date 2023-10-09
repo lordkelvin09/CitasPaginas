@@ -1,0 +1,154 @@
+*{
+    margin: 0;
+    padding-left: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    width: 90%;
+    max-width: 700px;
+    border: 2px solid #39383d;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px #088882, 0 2px 10px #088882;
+    position: relative;
+}
+
+.formulario {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 25px;
+}
+
+.form__grupo-input {
+    position: relative;
+}
+
+.form-control {
+    width: 90%;
+    background: transparent;
+    border-bottom: 2px solid #088882;
+    border-right: none;
+    color: hsla(0, 0%, 3%, 0.925);
+    font-size: 17px;
+    outline: none;
+    line-height: 45px;
+    padding: 0 10px;
+    transition: all 1s;
+}
+
+.form-control:focus {
+    box-shadow: 0 0 5px #088882;
+}
+
+.form__validacion {
+    position: absolute;
+    right: 45px;
+    bottom: 15px;
+    opacity: 0;
+    z-index: 1000;
+}
+
+.form__input-error {
+    font-size: 15px;
+    display: none;
+    margin-bottom: 0;
+}
+
+.form__input-error-activo {
+    display: block;
+}
+
+.form__mensaje{
+    display: none;
+    margin-top: 10px;
+    padding: 5px;
+    text-align: center;
+    background: #f00;
+    border-radius: 5px;
+}
+
+.form__mensaje-activo{
+    display: block;
+}
+
+.enviarFor {
+    display: flex;
+    /* grid-template-columns: 1fr 1fr; */
+    align-items: center;
+    flex-direction: column;
+}
+.enviarFor #AcepCond{
+    position: relative;
+}
+.Acep__boton {
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.form__btn{
+    padding: 15px 35px;
+    background: #000;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.form__btn:hover{
+    background-color: #088882;
+    transition: background 1s;
+}
+
+.form__mensaje-exito{
+    display: none;
+    font-size: 20px;
+    color: #035f22;
+    padding: 10px 0;
+    text-align: center;
+}
+
+.form__mensaje-activo {
+    display: block;
+}
+.estimador {
+    display: none;
+    position:absolute;
+    width: 80%;
+    height: 120px;
+    border: 2px solid #39383d;
+    margin: 30px;
+    bottom: -170px;
+    left: 40px;
+}
+
+.campos {
+    padding: 13px 5px;
+    margin-left: 25px;
+    display: flex;
+    position: relative;
+}
+
+.campos .estimadores {
+    position: absolute;
+    right: 50px;
+}
+
+/* Validaciones */
+
+.form__grupo-correcto .form__validacion{
+    color: #035f22;
+    opacity: 1;
+}
+
+.form__grupo-incorrecto{
+    color: #f00;
+}
+
+.form__grupo-incorrecto .form__validacion{
+    color: #f00;
+    opacity: 1;
+}
+
+.form__grupo-incorrecto .form-control {
+    border: 1px solid #f00;
+}
