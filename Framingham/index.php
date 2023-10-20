@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -12,7 +13,7 @@
 <body>
 
     <div class="container p-3 mt-3">
-        <form class="formulario" id="formulario" action="#">
+        <form class="formulario" id="formulario" method="post" action="registrar.php">
 
             <!-- grupo sexo -->
             <div class="form__control" id="control__sexo">
@@ -120,7 +121,7 @@
                             <input class="form-check-input" id="terminos" name="terminos" type="checkbox" required>
                             <p id="AcepCond">Acepto los terminos y condiciones</p>
                         </label>
-                        <input class="form__btn"type="submit" value="Enviar">
+                        <input class="form__btn"type="submit" value="Enviar" name="registrer">
                         <p class="form__mensaje-exito" id="form__mensaje-exito">
                             El formulario se envio correctamente.
                         </p>
@@ -140,10 +141,12 @@
                 </div>
 
             </div>
-
         </form>
- 
+        <?php
+        include("./controllers/registrar.php");
+        ?>
     </div>
+    
     
     <script src="./script.js"></script>
 </body>
