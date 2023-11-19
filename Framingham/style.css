@@ -6,7 +6,7 @@
 
 .container{
     width: 90%;
-    max-width: 700px;
+    max-width: 500px;
     border: 2px solid #39383d;
     border-radius: 10px;
     box-shadow: 0 2px 10px #088882, 0 2px 10px #088882;
@@ -17,6 +17,7 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 25px;
+    
 }
 
 .form__grupo-input {
@@ -118,7 +119,7 @@
     border: 2px solid #39383d;
     margin: 30px;
     bottom: -170px;
-    left: 40px;
+    left: 30px;
 }
 
 .campos {

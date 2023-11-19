@@ -74,54 +74,54 @@ document.addEventListener('DOMContentLoaded', function() {
         
     //Funciones para obtener las puntuaciones
     function obtenerPuntuacionSexo(sexo){
-        if(sexo === "Hombre") {
+        if(sexo === "Masculino") {
             return 0;
             
-        }else if(sexo === "Mujer"){
+        }else if(sexo === "Femenino"){
             return 0;
         }
     }
     
     function obtenerPuntuacionEdad(edad, sexo){
-        if(edad >= 20 && edad <= 34 && sexo === "Hombre") {
+        if(edad >= 20 && edad <= 34 && sexo === "Masculino") {
             return -9;
-        }else if(edad >= 35 && edad <=39 && sexo === "Hombre") {
+        }else if(edad >= 35 && edad <=39 && sexo === "Masculino") {
             return -4;
-        }else if(edad >= 40 && edad <=44 && sexo === "Hombre") {
+        }else if(edad >= 40 && edad <=44 && sexo === "Masculino") {
             return 0;
-        }else if(edad >= 45 && edad <=49 && sexo === "Hombre") {
+        }else if(edad >= 45 && edad <=49 && sexo === "Masculino") {
             return 3;
-        }else if(edad >= 50 && edad <=54 && sexo === "Hombre") {
+        }else if(edad >= 50 && edad <=54 && sexo === "Masculino") {
             return 6;
-        }else if(edad >= 55 && edad <=59 && sexo === "Hombre") {
+        }else if(edad >= 55 && edad <=59 && sexo === "Masculino") {
             return 8;
-        }else if(edad >= 60 && edad <=64 && sexo === "Hombre") {
+        }else if(edad >= 60 && edad <=64 && sexo === "Masculino") {
             return 10;
-        }else if(edad >= 65 && edad <=69 && sexo === "Hombre") {
+        }else if(edad >= 65 && edad <=69 && sexo === "Masculino") {
             return 11;
-        }else if(edad >= 70 && edad <=74 && sexo === "Hombre") {
+        }else if(edad >= 70 && edad <=74 && sexo === "Masculino") {
             return 12;
-        }else if(edad >= 75 && edad <=79 && sexo === "Hombre") {
+        }else if(edad >= 75 && edad <=79 && sexo === "Masculino") {
             return 13;
-        }if(edad >= 20 && edad <= 34 && sexo === "Mujer") {
+        }if(edad >= 20 && edad <= 34 && sexo === "Femenino") {
             return -7;
-        }else if(edad >= 35 && edad <=39 && sexo === "Mujer") {
+        }else if(edad >= 35 && edad <=39 && sexo === "Femenino") {
             return -3;
-        }else if(edad >= 40 && edad <=44 && sexo === "Mujer") {
+        }else if(edad >= 40 && edad <=44 && sexo === "Femenino") {
             return 0;
-        }else if(edad >= 45 && edad <=49 && sexo === "Mujer") {
+        }else if(edad >= 45 && edad <=49 && sexo === "Femenino") {
             return 3;
-        }else if(edad >= 50 && edad <=54 && sexo === "Mujer") {
+        }else if(edad >= 50 && edad <=54 && sexo === "Femenino") {
             return 6;
-        }else if(edad >= 55 && edad <=59 && sexo === "Mujer") {
+        }else if(edad >= 55 && edad <=59 && sexo === "Femenino") {
             return 8;
-        }else if(edad >= 60 && edad <=64 && sexo === "Mujer") {
+        }else if(edad >= 60 && edad <=64 && sexo === "Femenino") {
             return 10;
-        }else if(edad >= 65 && edad <=69 && sexo === "Mujer") {
+        }else if(edad >= 65 && edad <=69 && sexo === "Femenino") {
             return 12;
-        }else if(edad >= 70 && edad <=74 && sexo === "Mujer") {
+        }else if(edad >= 70 && edad <=74 && sexo === "Femenino") {
             return 14;
-        }else if(edad >= 75 && edad <=79 && sexo === "Mujer") {
+        }else if(edad >= 75 && edad <=79 && sexo === "Femenino") {
             return 16;
         }
     }
@@ -149,70 +149,70 @@ document.addEventListener('DOMContentLoaded', function() {
             return 2;
         }else if(colesterolTotal >= 160 && colesterolTotal <= 199 && edad >=60 && edad <=69 && sexo !== '') {
             return 1;
-        }else if(colesterolTotal >= 160 && colesterolTotal <= 199 && edad >=70 && edad <=79 && sexo === "Hombre") {
+        }else if(colesterolTotal >= 160 && colesterolTotal <= 199 && edad >=70 && edad <=79 && sexo === "Masculino") {
             return 0;
-        }else if(colesterolTotal >= 200 && colesterolTotal <= 239 && edad >=20 && edad <=39 && sexo === "Hombre") {
+        }else if(colesterolTotal >= 200 && colesterolTotal <= 239 && edad >=20 && edad <=39 && sexo === "Masculino") {
             return 7;
-        }else if(colesterolTotal >= 200 && colesterolTotal <= 239 && edad >=40 && edad <=49 && sexo === "Hombre") {
+        }else if(colesterolTotal >= 200 && colesterolTotal <= 239 && edad >=40 && edad <=49 && sexo === "Masculino") {
             return 5;
-        }else if(colesterolTotal >= 200 && colesterolTotal <= 239 && edad >=50 && edad <=59 && sexo === "Hombre") {
+        }else if(colesterolTotal >= 200 && colesterolTotal <= 239 && edad >=50 && edad <=59 && sexo === "Masculino") {
             return 3;
-        }else if(colesterolTotal >= 200 && colesterolTotal <= 239 && edad >=60 && edad <=69 && sexo === "Hombre") {
+        }else if(colesterolTotal >= 200 && colesterolTotal <= 239 && edad >=60 && edad <=69 && sexo === "Masculino") {
             return 1;
-        }else if(colesterolTotal >= 200 && colesterolTotal <= 239 && edad >=70 && edad <=79 && sexo === "Hombre") {
+        }else if(colesterolTotal >= 200 && colesterolTotal <= 239 && edad >=70 && edad <=79 && sexo === "Masculino") {
             return 0;
-        }else if(colesterolTotal >= 240 && colesterolTotal <= 279 && edad >=20 && edad <=39 && sexo === "Hombre") {
+        }else if(colesterolTotal >= 240 && colesterolTotal <= 279 && edad >=20 && edad <=39 && sexo === "Masculino") {
             return 9;
-        }else if(colesterolTotal >= 240 && colesterolTotal <= 279 && edad >=40 && edad <=49 && sexo === "Hombre") {
+        }else if(colesterolTotal >= 240 && colesterolTotal <= 279 && edad >=40 && edad <=49 && sexo === "Masculino") {
             return 6;
-        }else if(colesterolTotal >= 240 && colesterolTotal <= 279 && edad >=50 && edad <=59 && sexo === "Hombre") {
+        }else if(colesterolTotal >= 240 && colesterolTotal <= 279 && edad >=50 && edad <=59 && sexo === "Masculino") {
             return 4;
-        }else if(colesterolTotal >= 240 && colesterolTotal <= 279 && edad >=60 && edad <=69 && sexo === "Hombre") {
+        }else if(colesterolTotal >= 240 && colesterolTotal <= 279 && edad >=60 && edad <=69 && sexo === "Masculino") {
             return 2;
-        }else if(colesterolTotal >= 240 && colesterolTotal <= 279 && edad >=70 && edad <=79 && sexo === "Hombre") {
+        }else if(colesterolTotal >= 240 && colesterolTotal <= 279 && edad >=70 && edad <=79 && sexo === "Masculino") {
             return 1;
-        }else if(colesterolTotal >= 280 && edad >=20 && edad <=39 && sexo === "Hombre") {
+        }else if(colesterolTotal >= 280 && edad >=20 && edad <=39 && sexo === "Masculino") {
             return 11;
-        }else if(colesterolTotal >= 280 && edad >=40 && edad <=49 && sexo === "Hombre") {
+        }else if(colesterolTotal >= 280 && edad >=40 && edad <=49 && sexo === "Masculino") {
             return 8;
-        }else if(colesterolTotal >= 280 && edad >=50 && edad <=59 && sexo === "Hombre") {
+        }else if(colesterolTotal >= 280 && edad >=50 && edad <=59 && sexo === "Masculino") {
             return 5;
-        }else if(colesterolTotal >= 280 && edad >=60 && edad <=69 && sexo === "Hombre") {
+        }else if(colesterolTotal >= 280 && edad >=60 && edad <=69 && sexo === "Masculino") {
             return 3;
-        }else if(colesterolTotal >= 280 && edad >=70 && edad <=79 && sexo === "Hombre") {
+        }else if(colesterolTotal >= 280 && edad >=70 && edad <=79 && sexo === "Masculino") {
             return 1;
         } // Mujeres
-        else if(colesterolTotal >= 160 && colesterolTotal <= 199 && edad >=70 && edad <=79 && sexo === "Mujer") {
+        else if(colesterolTotal >= 160 && colesterolTotal <= 199 && edad >=70 && edad <=79 && sexo === "Femenino") {
             return 1;
-        }else if(colesterolTotal >= 200 && colesterolTotal <= 239 && edad >=20 && edad <=39 && sexo === "Mujer") {
+        }else if(colesterolTotal >= 200 && colesterolTotal <= 239 && edad >=20 && edad <=39 && sexo === "Femenino") {
             return 8;
-        }else if(colesterolTotal >= 200 && colesterolTotal <= 239 && edad >=40 && edad <=49 && sexo === "Mujer") {
+        }else if(colesterolTotal >= 200 && colesterolTotal <= 239 && edad >=40 && edad <=49 && sexo === "Femenino") {
             return 6;
-        }else if(colesterolTotal >= 200 && colesterolTotal <= 239 && edad >=50 && edad <=59 && sexo === "Mujer") {
+        }else if(colesterolTotal >= 200 && colesterolTotal <= 239 && edad >=50 && edad <=59 && sexo === "Femenino") {
             return 4;
-        }else if(colesterolTotal >= 200 && colesterolTotal <= 239 && edad >=60 && edad <=69 && sexo === "Mujer") {
+        }else if(colesterolTotal >= 200 && colesterolTotal <= 239 && edad >=60 && edad <=69 && sexo === "Femenino") {
             return 2;
-        }else if(colesterolTotal >= 200 && colesterolTotal <= 239 && edad >=70 && edad <=79 && sexo === "Mujer") {
+        }else if(colesterolTotal >= 200 && colesterolTotal <= 239 && edad >=70 && edad <=79 && sexo === "Femenino") {
             return 1;
-        }else if(colesterolTotal >= 240 && colesterolTotal <= 279 && edad >=20 && edad <=39 && sexo === "Mujer") {
+        }else if(colesterolTotal >= 240 && colesterolTotal <= 279 && edad >=20 && edad <=39 && sexo === "Femenino") {
             return 11;
-        }else if(colesterolTotal >= 240 && colesterolTotal <= 279 && edad >=40 && edad <=49 && sexo === "Mujer") {
+        }else if(colesterolTotal >= 240 && colesterolTotal <= 279 && edad >=40 && edad <=49 && sexo === "Femenino") {
             return 8;
-        }else if(colesterolTotal >= 240 && colesterolTotal <= 279 && edad >=50 && edad <=59 && sexo === "Mujer") {
+        }else if(colesterolTotal >= 240 && colesterolTotal <= 279 && edad >=50 && edad <=59 && sexo === "Femenino") {
             return 5;
-        }else if(colesterolTotal >= 240 && colesterolTotal <= 279 && edad >=60 && edad <=69 && sexo === "Mujer") {
+        }else if(colesterolTotal >= 240 && colesterolTotal <= 279 && edad >=60 && edad <=69 && sexo === "Femenino") {
             return 3;
-        }else if(colesterolTotal >= 240 && colesterolTotal <= 279 && edad >=70 && edad <=79 && sexo === "Mujer") {
+        }else if(colesterolTotal >= 240 && colesterolTotal <= 279 && edad >=70 && edad <=79 && sexo === "Femenino") {
             return 2;
-        }else if(colesterolTotal >= 280 && edad >=20 && edad <=39 && sexo === "Mujer") {
+        }else if(colesterolTotal >= 280 && edad >=20 && edad <=39 && sexo === "Femenino") {
             return 13;
-        }else if(colesterolTotal >= 280 && edad >=40 && edad <=49 && sexo === "Mujer") {
+        }else if(colesterolTotal >= 280 && edad >=40 && edad <=49 && sexo === "Femenino") {
             return 10;
-        }else if(colesterolTotal >= 280 && edad >=50 && edad <=59 && sexo === "Mujer") {
+        }else if(colesterolTotal >= 280 && edad >=50 && edad <=59 && sexo === "Femenino") {
             return 7;
-        }else if(colesterolTotal >= 280 && edad >=60 && edad <=69 && sexo === "Mujer") {
+        }else if(colesterolTotal >= 280 && edad >=60 && edad <=69 && sexo === "Femenino") {
             return 4;
-        }else if(colesterolTotal >= 280 && edad >=70 && edad <=79 && sexo === "Mujer") {
+        }else if(colesterolTotal >= 280 && edad >=70 && edad <=79 && sexo === "Femenino") {
             return 2;
         }
     }
@@ -220,37 +220,37 @@ document.addEventListener('DOMContentLoaded', function() {
     function obtenerPuntuacionPresionArterial(presionArterial, tratamientoHta, sexo){
         if(presionArterial < 120 && tratamientoHta !== "" && sexo !== "") {
             return 0
-        }else if(presionArterial >=120 && presionArterial <= 129 && tratamientoHta === "No" && sexo === "Hombre"){
+        }else if(presionArterial >=120 && presionArterial <= 129 && tratamientoHta === "No" && sexo === "Masculino"){
             return 0
-        }else if(presionArterial >=120 && presionArterial <= 129 && tratamientoHta === "Si" && sexo === "Hombre"){
+        }else if(presionArterial >=120 && presionArterial <= 129 && tratamientoHta === "Si" && sexo === "Masculino"){
             return 1
-        }else if(presionArterial >=130 && presionArterial <= 139 && tratamientoHta === "No" && sexo === "Hombre"){
+        }else if(presionArterial >=130 && presionArterial <= 139 && tratamientoHta === "No" && sexo === "Masculino"){
             return 1
-        }else if(presionArterial >=130 && presionArterial <= 139 && tratamientoHta === "Si" && sexo === "Hombre"){
+        }else if(presionArterial >=130 && presionArterial <= 139 && tratamientoHta === "Si" && sexo === "Masculino"){
             return 2
-        }else if(presionArterial >=140 && presionArterial <= 159 && tratamientoHta === "No" && sexo === "Hombre"){
+        }else if(presionArterial >=140 && presionArterial <= 159 && tratamientoHta === "No" && sexo === "Masculino"){
             return 1
-        }else if(presionArterial >=140 && presionArterial <= 159 && tratamientoHta === "Si" && sexo === "Hombre"){
+        }else if(presionArterial >=140 && presionArterial <= 159 && tratamientoHta === "Si" && sexo === "Masculino"){
             return 2
-        }else if(presionArterial >=160 && tratamientoHta === "No" && sexo === "Hombre"){
+        }else if(presionArterial >=160 && tratamientoHta === "No" && sexo === "Masculino"){
             return 2
-        }else if(presionArterial >=160 && tratamientoHta === "Si" && sexo === "Hombre"){
+        }else if(presionArterial >=160 && tratamientoHta === "Si" && sexo === "Masculino"){
             return 3
-        }else if(presionArterial >=120 && presionArterial <= 129 && tratamientoHta === "No" && sexo === "Mujer"){
+        }else if(presionArterial >=120 && presionArterial <= 129 && tratamientoHta === "No" && sexo === "Femenino"){
             return 1
-        }else if(presionArterial >=120 && presionArterial <= 129 && tratamientoHta === "Si" && sexo === "Mujer"){
+        }else if(presionArterial >=120 && presionArterial <= 129 && tratamientoHta === "Si" && sexo === "Femenino"){
             return 3
-        }else if(presionArterial >=130 && presionArterial <= 139 && tratamientoHta === "NO" && sexo === "Mujer"){
+        }else if(presionArterial >=130 && presionArterial <= 139 && tratamientoHta === "NO" && sexo === "Femenino"){
             return 2
-        }else if(presionArterial >=130 && presionArterial <= 139 && tratamientoHta === "Si" && sexo === "Mujer"){
+        }else if(presionArterial >=130 && presionArterial <= 139 && tratamientoHta === "Si" && sexo === "Femenino"){
             return 4
-        }else if(presionArterial >=140 && presionArterial <= 159 && tratamientoHta === "No" && sexo === "Mujer"){
+        }else if(presionArterial >=140 && presionArterial <= 159 && tratamientoHta === "No" && sexo === "Femenino"){
             return 3
-        }else if(presionArterial >=140 && presionArterial <= 159 && tratamientoHta === "Si" && sexo === "Mujer"){
+        }else if(presionArterial >=140 && presionArterial <= 159 && tratamientoHta === "Si" && sexo === "Femenino"){
             return 5
-        }else if(presionArterial >=160 && tratamientoHta === "No" && sexo === "Mujer"){
+        }else if(presionArterial >=160 && tratamientoHta === "No" && sexo === "Femenino"){
             return 4
-        }else if(presionArterial >=160 && tratamientoHta === "Si" && sexo === "Mujer"){
+        }else if(presionArterial >=160 && tratamientoHta === "Si" && sexo === "Femenino"){
             return 6
         }
     }
@@ -258,24 +258,24 @@ document.addEventListener('DOMContentLoaded', function() {
     function obtenerPuntuacionFumador(fumador, edad, sexo){
         if(fumador === "No" && edad >= 20 && edad <=79 && sexo !== ''){
             return 0;
-        }else if(fumador === 'Si' && edad >= 20 && edad <= 39 && sexo === "Hombre"){
+        }else if(fumador === 'Si' && edad >= 20 && edad <= 39 && sexo === "Masculino"){
             return 8;
-        }else if(fumador === 'Si' && edad >= 40 && edad <= 49 && sexo === "Hombre"){
+        }else if(fumador === 'Si' && edad >= 40 && edad <= 49 && sexo === "Masculino"){
             return 5;
-        }else if(fumador === 'Si' && edad >= 50 && edad <= 59 && sexo === "Hombre"){
+        }else if(fumador === 'Si' && edad >= 50 && edad <= 59 && sexo === "Masculino"){
             return 3;
-        }else if(fumador === 'Si' && edad >= 60 && edad <= 79 && sexo === "Hombre"){
+        }else if(fumador === 'Si' && edad >= 60 && edad <= 79 && sexo === "Masculino"){
             return 1;
         } //Mujeres
-        else if(fumador === 'Si' && edad >= 20 && edad <= 39 && sexo === "Mujer"){
+        else if(fumador === 'Si' && edad >= 20 && edad <= 39 && sexo === "Femenino"){
             return 9;
-        }else if(fumador === 'Si' && edad >= 40 && edad <= 49 && sexo === "Mujer"){
+        }else if(fumador === 'Si' && edad >= 40 && edad <= 49 && sexo === "Femenino"){
             return 7;
-        } else if(fumador === 'Si' && edad >= 50 && edad <= 59 && sexo === "Mujer"){
+        } else if(fumador === 'Si' && edad >= 50 && edad <= 59 && sexo === "Femenino"){
             return 4;
-        }else if(fumador === 'Si' && edad >= 60 && edad <= 79 && sexo === "Mujer"){
+        }else if(fumador === 'Si' && edad >= 60 && edad <= 79 && sexo === "Femenino"){
             return 2;
-        }else if(fumador === 'Si' && edad >= 70 && edad <= 79 && sexo === "Mujer"){
+        }else if(fumador === 'Si' && edad >= 70 && edad <= 79 && sexo === "Femenino"){
             return 1;
         }
     }
@@ -298,63 +298,63 @@ document.addEventListener('DOMContentLoaded', function() {
             const riesgo = calcularRiesgoFramingham(sexo, edad, colesterolTotal, colesterolHdl, presionArterial, tratamientoHta, fumador);
             
             function totalPuntos(riesgo, sexo) {
-                if(riesgo < 0 && sexo === 'Hombre'){
+                if(riesgo < 0 && sexo === 'Masculino'){
                     return '<1';
-                }else if(riesgo >= 0 && riesgo <= 4 && sexo === "Hombre"){
+                }else if(riesgo >= 0 && riesgo <= 4 && sexo === "Masculino"){
                     return 1
-                }else if(riesgo >= 5 && riesgo <= 6 && sexo === "Hombre"){
+                }else if(riesgo >= 5 && riesgo <= 6 && sexo === "Masculino"){
                     return 2
-                }else if(riesgo === 7 && sexo === "Hombre"){
+                }else if(riesgo === 7 && sexo === "Masculino"){
                     return 3
-                }else if(riesgo === 8 && sexo === "Hombre"){
+                }else if(riesgo === 8 && sexo === "Masculino"){
                     return 4
-                }else if(riesgo === 9 && sexo === "Hombre"){
+                }else if(riesgo === 9 && sexo === "Masculino"){
                     return 5
-                }else if(riesgo === 10 && sexo === "Hombre"){
+                }else if(riesgo === 10 && sexo === "Masculino"){
                     return 6
-                }else if(riesgo === 11 && sexo === "Hombre"){
+                }else if(riesgo === 11 && sexo === "Masculino"){
                     return 8
-                }else if(riesgo === 12 && sexo === "Hombre"){
+                }else if(riesgo === 12 && sexo === "Masculino"){
                     return 10
-                }else if(riesgo === 13 && sexo === "Hombre"){
+                }else if(riesgo === 13 && sexo === "Masculino"){
                     return 12
-                }else if(riesgo === 14 && sexo === "Hombre"){
+                }else if(riesgo === 14 && sexo === "Masculino"){
                     return 16
-                }else if(riesgo === 15 && sexo === "Hombre"){
+                }else if(riesgo === 15 && sexo === "Masculino"){
                     return 20
-                }else if(riesgo === 16 && sexo === "Hombre"){
+                }else if(riesgo === 16 && sexo === "Masculino"){
                     return 25
-                }else if(riesgo >= 17 && sexo === "Hombre"){
+                }else if(riesgo >= 17 && sexo === "Masculino"){
                     return '≥30'
                 }
             
-                if(riesgo < 9 && sexo === "Mujer"){
+                if(riesgo < 9 && sexo === "Femenino"){
                     return '<1'
-                }else if(riesgo >= 9 && riesgo <= 12 && sexo === "Mujer"){
+                }else if(riesgo >= 9 && riesgo <= 12 && sexo === "Femenino"){
                     return 1
-                }else if(riesgo === 13 || riesgo === 14 && sexo === "Mujer"){
+                }else if(riesgo === 13 || riesgo === 14 && sexo === "Femenino"){
                     return 2
-                }else if(riesgo === 15 && sexo === "Mujer"){
+                }else if(riesgo === 15 && sexo === "Femenino"){
                     return 3
-                }else if(riesgo === 16 && sexo === "Mujer"){
+                }else if(riesgo === 16 && sexo === "Femenino"){
                     return 4
-                }else if(riesgo === 17 && sexo === "Mujer"){
+                }else if(riesgo === 17 && sexo === "Femenino"){
                     return 5
-                }else if(riesgo === 18 && sexo === "Mujer"){
+                }else if(riesgo === 18 && sexo === "Femenino"){
                     return 6
-                }else if(riesgo === 19 && sexo === "Mujer"){
+                }else if(riesgo === 19 && sexo === "Femenino"){
                     return 8
-                }else if(riesgo === 20 && sexo === "Mujer"){
+                }else if(riesgo === 20 && sexo === "Femenino"){
                     return 11
-                }else if(riesgo === 21 && sexo === "Mujer"){
+                }else if(riesgo === 21 && sexo === "Femenino"){
                     return 14
-                }else if(riesgo === 22 && sexo === "Mujer"){
+                }else if(riesgo === 22 && sexo === "Femenino"){
                     return 17
-                }else if(riesgo === 23 && sexo === "Mujer"){
+                }else if(riesgo === 23 && sexo === "Femenino"){
                     return 22
-                }else if(riesgo === 24 && sexo === "Mujer"){
+                }else if(riesgo === 24 && sexo === "Femenino"){
                     return 27
-                }else if(riesgo >= 25 && sexo === "Mujer"){
+                }else if(riesgo >= 25 && sexo === "Femenino"){
                     return 30
                 }
             }
@@ -365,6 +365,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 puntuaInput.value = riesgo;
                 porcentajeInput.value = totalPuntos(riesgo, sexo);
             console.log('Riesgo de Framingham:', riesgo);
+            console.log('Porcentaje:', porcentajeInput.value);
             // console.log(sexo)
     
 
@@ -391,4 +392,3 @@ document.addEventListener('DOMContentLoaded', function() {
     })
     
 })
-
