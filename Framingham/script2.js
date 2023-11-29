@@ -1,6 +1,8 @@
-function Listar() {
+Listar();
+function Listar(busqueda) {
     fetch("listar.php", {
-        method: "POST"
+        method: "POST",
+        body: busqueda
     }).then(response => response.text()).then(response =>{
         result.innerHTML = response;
     })
@@ -19,10 +21,20 @@ registrar.addEventListener('click', () => {
                 showConfirmButton: false,
                 timer: 2000
               })
-            //   formulario.reset();
-            }
+            formulario.reset();
             Listar();
-
+            }else{
+              Swal.fire({
+                icon: "success",
+                title: "Modificado",
+                showConfirmButton: false,
+                timer: 2000
+              })
+            registrar.value = "Resgistrar";
+            idp.value = "";
+            Listar();
+            // formulario.reset();
+            }
     })
 });
 
@@ -60,7 +72,25 @@ function Editar(id) {
   fetch("editar.php",{
     method: "POST",
     body: id
-  }).then(response => response.text()).then(response => {
-    console.log(response)
+  }).then(response => response.json()).then(response => {
+    idp.value = response.id;
+    sexo.value = response.sexo;
+    edad.value = response.edad;
+    colesterolTotal.value = response.colesterolTotal;
+    colesterolHdl.value = response.colesterolHdl;
+    fumador.value = response.colesterolHdl;
+    presionArterial.value = response.presionArterial;
+    tratamientoHta.value = response.tratamientoHta;
+    registrar.value = "Actualizar";
   })
 }
+
+let buscar = document.querySelector('#buscar');
+buscar.addEventListener("keyup", () => {
+  const valor = buscar.value;
+  if (valor == "") {
+    Listar()
+  } else {
+    Listar(valor)
+  }
+})

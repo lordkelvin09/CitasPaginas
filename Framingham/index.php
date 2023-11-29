@@ -20,6 +20,7 @@
                         <!-- grupo sexo -->
                         <div class="form__control" id="control__sexo">
                             <label class="form-label"><b>Sexo</b> (Masculino/Femenino)</label>
+                            <input type="hidden" name="idp" id="idp" value="">
                             <div class="form__grupo-input">
                                 <select class="form-control form-select" id="sexo" name="sexo" required>
                                     <option value="Masculino">Masculino</option>
@@ -133,7 +134,7 @@
                         <div class="estimador">
                             <div class="puntuacion campos">
                                 <label class="form-label" for="puntua"><b>Puntuacion</b></label>
-                                <input type="number" id="puntua" name="puntua" class="estimadores">
+                                <input type="number" id="puntuacion" name="puntuacion" class="estimadores">
                             </div>
 
                             <div class="riesgo campos">
@@ -147,6 +148,16 @@
                 </form>
             </div>
             <div class="col-lg-8" style="width:40%;">
+                <div class="row">
+                    <div class="col-lg-6 ml-auto">
+                        <form action="" method="post">
+                            <div class="form-group">
+                                <label for="buscar">Buscar:</label>
+                                <input type="text" name="buscar" id="buscar" placeholder="Buscar..." class="form-control">
+                            </div>
+                        </form>
+                    </div>
+                </div>
                 <table class="table table-hover table-resposive">
                 <thead>
                     <tr>

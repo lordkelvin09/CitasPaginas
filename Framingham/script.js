@@ -295,7 +295,7 @@ document.addEventListener('DOMContentLoaded', function() {
             const fumador = $formulario.elements['fumador'].value;
             const tratamientoHta = $formulario.elements['tratamientoHta'].value;
 
-            const riesgo = calcularRiesgoFramingham(sexo, edad, colesterolTotal, colesterolHdl, presionArterial, tratamientoHta, fumador);
+            const riesgo = parseInt(calcularRiesgoFramingham(sexo, edad, colesterolTotal, colesterolHdl, presionArterial, tratamientoHta, fumador));
             
             function totalPuntos(riesgo, sexo) {
                 if(riesgo < 0 && sexo === 'Masculino'){
@@ -359,12 +359,12 @@ document.addEventListener('DOMContentLoaded', function() {
                 }
             }
                 const estimador = document.querySelector('.estimador');
-                const puntuaInput = document.getElementById('puntua');
+                const puntuaInput = document.getElementById('puntuacion');
                 const porcentajeInput = document.getElementById('porcentaje');
                 estimador.style.display = "block";
-                puntuaInput.value = riesgo;
-                porcentajeInput.value = totalPuntos(riesgo, sexo);
-            console.log('Riesgo de Framingham:', riesgo);
+                puntuaInput.value = parseInt(riesgo);
+                porcentajeInput.value = parseInt(totalPuntos(riesgo, sexo));
+            console.log('Riesgo de Framingham:', puntuaInput.value);
             console.log('Porcentaje:', porcentajeInput.value);
             // console.log(sexo)
     
